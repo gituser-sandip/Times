@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  
+}
+
+
+/* nav section coding starts */
+.nav_main_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: +3;
+}
+
+.nav_container{
+    width: 80%;
+    height: 75px;
+    display: flex;
+    padding: 10px;
+    
+}
+.logo{
+    width: 20%;
+    color: #ccc;
+    font-weight: bolder;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+}
+.nav_section{
+    width: 80%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin-right: 90px;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-align: center;
+    padding: 20px 60px;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: #ccc;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+
+nav ul li a:hover{
+  color: black;
+  background-color: #ccc;
+  border-radius: 40px 0 40px 0;
+  box-shadow: 0 0 10px #ccc;
+  transition: 0.6s ease;
+
+}
+
+/*main img slider -----------------------------------------------  */
+.main_img{
+    width: 100%;
+    height: 783px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  
+
+  /* heightlights container */
+
+  .heighlights{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* blog section coding starts */
+
+  .blog_highlight_main,.product_highlight_main, .research_highlight_main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .blog_highlight_container, .product_highlight_container, .research_highlight_container{
+    width: 80%;
+    
+  }
+  .blog_highlight_section, .research_highlight_section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .blog_highlight_img, .blog_highlight_content, .research_highlight_img, .research_highlight_content{
+    width: 50%;
+  }
+
+
+  /* highlight product section coding  */
+
+
+
+/* Slider Section */
+.p_collection_text {
+    font-family: "Quicksand", serif;
+    font-size: 40px;
+    padding: 200px;
+    margin-top: 30px;
+}
+
+.p_img_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    color: #fff;
+    padding: 30px;
+}
+
+.p_img_slider_container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 2300px;
+    padding: 8px;
+}
+
+.p_slider{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 24px;
+}
+
+.watch-item {
+    min-width: calc(25% - 20px);
+    box-sizing: border-box;
+    color: tan;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    background: #ccc;
+}
+
+.watch-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.watch-price {
+    font-size: 20px;
+    color: tan;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* Buttons for navigation */
+#p_prev,
+#p_next{
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+#p_prev{
+    left: 2%;
+}
+
+#p_next{
+    right: 2%;
+}
+
+.button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Dots for navigation */
+#dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10%;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.show-more {
+    text-align: center;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.show-morebtn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.show-more:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+/* Hover effect for items */
+.watch-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+ 
