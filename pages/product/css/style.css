@@ -185,7 +185,7 @@ nav ul li a:hover{
     display: inline-block;
     width: 40px;
     height: 4px;
-    background: #fff;
+    background: #000;
     border-radius: 10%;
     margin: 5px;
     cursor: pointer;
@@ -205,12 +205,17 @@ nav ul li a:hover{
     background: #ccc;
     border-radius: 10px;
     cursor: pointer;
+    
+}
+
+.show-more a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .show-morebtn{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .show-more:hover{
@@ -225,4 +230,21 @@ nav ul li a:hover{
     transform: scale(1.05);
     transition: all 0.7s ease;
 }
+
+/* Product page image collection */
+.img_collection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+.img_collection {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover; 
+    gap: 20px;
+}
+
 
