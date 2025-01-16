@@ -76,3 +76,153 @@ nav ul li a:hover{
   font-size: 17px;
 
 }
+
+/* Slider Section */
+.collection{
+    font-family: "Quicksand", serif;;
+    font-size: 50px;
+    padding: 200px;
+    margin-top: 30px;
+}
+.img_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    color: #fff;
+    padding: 30px;
+}
+
+.img_slider_container {
+    position: relative; 
+    overflow: hidden;
+    width: 80%;
+    max-width: 2300px;
+    padding: 8px;
+}
+
+.slider, .slider2 {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 24px;
+}
+
+.watch-item {
+    min-width: calc(25% - 20px);
+    box-sizing: border-box;
+    color: tan;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    background: #ccc;
+}
+
+.watch-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.watch-price {
+    font-size: 20px;
+    color: tan;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* Buttons for navigation */
+#prev, #next, #prev2, #next2 {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    background: inherit;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+#prev {
+    left: 2%; 
+}
+
+#next {
+    right: 2%; 
+}
+
+#prev2 {
+    left: 2%; 
+}
+
+#next2 {
+    right: 2%; 
+}
+
+.button:hover, .button2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Dots for navigation */
+#dots, #dots2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot, .dot2 {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10%;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.dot.active, .dot2.active {
+    opacity: 1;
+}
+
+.show-more{
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.show-morebtn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.show-more:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+/* Hover effect for items */
+.watch-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+
