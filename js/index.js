@@ -1,3 +1,5 @@
+//main home page image slider ------------------------------------------------------------------------------
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -43,7 +45,7 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-// highlight products secction
+// highlight products secction---------------------------------------------------------------------------------------------------------
  //Image slider buttons
  const slider = document.querySelector('.p_slider');
  const prev = document.getElementById('p_prev');
