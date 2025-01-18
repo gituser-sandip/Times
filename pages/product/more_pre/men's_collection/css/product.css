@@ -117,3 +117,39 @@ body {
     transition: all 0.3s ease;
     font-size: 15px;
 }
+
+.linking{
+    text-decoration: none;
+    color: inherit;
+    justify-items: center;
+}
+
+/* making the reivew section for products*/
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.review-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.stars {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+.quote {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.reviewer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.country {
+    color: #777;
+}

@@ -262,3 +262,14 @@ nav ul li a:hover{
     transition: all 0.3s ease;
     font-size: 15px;
 }
+
+/* footer designing  */
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #1D347A;
+    padding: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
