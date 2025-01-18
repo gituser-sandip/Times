@@ -76,57 +76,89 @@ nav ul li a:hover{
 
 }
 
-/* Slider Section */
-.collection{
-    font-family: "Quicksand", serif;;
-    font-size: 50px;
-    padding: 200px;
-    margin-top: 30px;
-}
-.img_slider {
+/* search by cateogery ------------------------------------------------------------------------------------------------------  */
+.categories-main-container{
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+    background: #eeecea;
+    margin-left: 80px;
+    margin-right: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70px;
-    color: #fff;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
     padding: 30px;
+    padding-top: 0px;
+    font-family: 'Ubuntu', sans-serif;  
+}
+.category{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.category a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.category li,.brand li, .price li{
+    margin: 10px;
+}
+.brand{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+}
+.brand a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
 }
 
-.img_slider_container {
-    position: relative; 
-    overflow: hidden;
-    width: 80%;
-    max-width: 2300px;
-    padding: 8px;
+.price{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
 }
-
-.slider, .slider2 {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-    gap: 24px;
-}
-
+/* products sections */
 .watch-item {
-    min-width: calc(25% - 20px);
+    width: 22%;
+    height: auto;
     box-sizing: border-box;
     color: rgb(255, 145, 0);
-    padding: 50px;
+    padding: 20px 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(30px);
-    border-radius: 20px;
-    background: #ccc;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    background: #eeecea;
     font-family: 'Ubuntu Mono', monospace;
 }
 
 .watch-image {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     border-radius: 30px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .watch-price {
@@ -134,101 +166,15 @@ nav ul li a:hover{
     color: rgb(255, 145, 0);
     font-weight: 500;
     margin: 10px 0px;
+    text-align: left;
 }
 
-/* Buttons for navigation */
-#prev, #next, #prev2, #next2 {
-    position: absolute;
-    top: 40%;
-    width: 50px;
-    height: 50px;
-    background: inherit;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    opacity: 0.7;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s, transform 0.2s;
-}
-
-#prev {
-    left: 2%; 
-}
-
-#next {
-    right: 2%; 
-}
-
-#prev2 {
-    left: 2%; 
-}
-
-#next2 {
-    right: 2%; 
-}
-
-.button:hover, .button2:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-/* Dots for navigation */
-#dots, #dots2 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.dot, .dot2 {
-    display: inline-block;
-    width: 40px;
-    height: 4px;
-    background: #000;
-    border-radius: 10%;
-    margin: 5px;
-    cursor: pointer;
-    opacity: 0.2;
-}
-
-.dot.active, .dot2.active {
-    opacity: 1;
-}
-
-.show-more{
-    text-align: center;
-    margin-top: 30px;
-    display: inline-block;
-    width: 120px;
-    height: 40px;
-    background: #ccc;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-
-.show-more a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.show-morebtn{
-    display: flex;
-    justify-content: center;    
-}
-
-.show-more:hover{
-    transform: scale(1.03);
-    transition: all 0.3s ease;
-    font-size: 15px;
-}
 
 /* Hover effect for items */
-.watch-item:hover {
+.watch-image:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 
 /* Product page image collection */
@@ -236,36 +182,41 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding-top:10px;
 }
 
 .img_collection {
     display: flex;
     flex-wrap: wrap;
     object-fit: cover; 
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Creating the Add to cart button */
 .addTo{
     text-align: center;
-    margin-top: 30px;
-    width: 120px;
+    margin-top: 5px;
+    width: 240px;
     height: 40px;
-    background: whitesmoke;
-    border-radius: 10px;
+    background: #dc2c30;
     cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
 .addTo:hover{
     transform: scale(1.03);
     transition: all 0.3s ease;
     font-size: 15px;
+    background: #e05053;
 }
 
 /* footer designing  */
 
 footer{
+    margin-top: 30px;
     width: 100%;
     height: auto;
     background: #1D347A;
