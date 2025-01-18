@@ -249,27 +249,17 @@ nav ul li a:hover{
 /* Creating the Add to cart button */
 .addTo{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 120px;
     height: 40px;
-    background: whitesmoke;
+    background: gray;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .addTo:hover{
+    background-color: #c2185b;
     transform: scale(1.03);
     transition: all 0.3s ease;
     font-size: 15px;
-}
-
-/* footer designing  */
-
-footer{
-    width: 100%;
-    height: auto;
-    background: #1D347A;
-    padding: 20px;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
 }
