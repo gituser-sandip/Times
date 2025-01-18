@@ -5,6 +5,7 @@
 }
 
 /* nav section coding starts --------------------------------------------------------------------------------------------------------- */
+
 .nav_main_container{
     width: 100%;
     height: auto;
@@ -19,16 +20,19 @@
     width: 80%;
     height: 75px;
     display: flex;
-    padding: 10px;
-    
+    padding: 5px 10px;
+    background: #1751f4;
+    margin-top: 10px;
+    border-radius: 15px;
 }
 .logo{
     width: 20%;
-    color: #ccc;
+    color: #ffffff;
     font-weight: bolder;
     font-size: 90px;
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 .nav_section{
     width: 80%;
@@ -38,8 +42,7 @@ nav ul{
     list-style: none;
     display: flex;
     width: 100%;
-    padding: 20px;
-    margin-right: 90px;
+    padding: 20px 0px;
     position: relative;
     
 }
@@ -47,31 +50,27 @@ nav ul{
 nav ul li a{
     text-align: center;
     padding: 20px 60px;
-}
-
-
-
-nav a{
     text-decoration: none;
-    color: #8b8b8b;
+    color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
 }
 
 #product a{
     color: black;
-    background-color: #ccc;
+    background-color: #ffffff;
     border-radius: 40px 0 40px 0;
-    box-shadow: 0 0 10px #a2a2a2;
+    box-shadow: 0 0 10px #ffffff;
     transition: 0.6s ease;
     font-size: 17px;
   }
 
+
 nav ul li a:hover{
   color: black;
-  background-color: #ccc;
+  background-color: #ffffff;
   border-radius: 40px 0 40px 0;
-  box-shadow: 0 0 10px #a2a2a2;
+  box-shadow: 0 0 10px #ffffff;
   transition: 0.6s ease;
   font-size: 17px;
 
@@ -262,12 +261,4 @@ nav ul li a:hover{
     transform: scale(1.03);
     transition: all 0.3s ease;
     font-size: 15px;
-}
-
-.linking{
-    display: flex;
-    text-decoration: none;
-    flex-direction: column;
-    color: tan;
-    align-items: center;
 }
