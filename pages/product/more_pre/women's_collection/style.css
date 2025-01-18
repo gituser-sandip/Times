@@ -249,16 +249,15 @@ nav ul li a:hover{
 /* Creating the Add to cart button */
 .addTo{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 120px;
     height: 40px;
-    background: gray;
+    background: whitesmoke;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .addTo:hover{
-    background-color: #c2185b;
     transform: scale(1.03);
     transition: all 0.3s ease;
     font-size: 15px;
