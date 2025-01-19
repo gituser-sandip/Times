@@ -75,6 +75,21 @@ nav ul li a:hover{
   font-size: 17px;
 
 }
+/* research section designing */
+
+.research-main-container{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.research-container{
+    width: 80%;
+    height: auto;
+    padding: 30px;
+}
 /* footer designing  */
 
 footer{
