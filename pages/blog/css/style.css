@@ -74,6 +74,59 @@ nav ul li a:hover{
   font-size: 17px;
 
 }
+/* blog secion design starts ---------------------------------------------------------------------- */
+
+.blog-main-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    flex-direction: column;
+}
+.blog-wlcm-text{
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.blog-one-section{
+    display: flex;
+    flex-direction: row;
+}
+.blog-one-img, .blog-one-content{
+    width: 50%;
+    padding: 20px;
+}
+.blog-one-content p{
+    padding: 5px;
+    font-size: 18px;
+}
+/* read more button */
+.readMore-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.readMore{
+    width: 140px;
+    height: 40px;   
+    padding: 10px;
+    background: #1751f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+}
+.readMore a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* blog secion design ends ---------------------------------------------------------------------- */
+
+
 
 /* footer designing  */
 

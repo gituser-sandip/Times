@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
@@ -33,14 +35,145 @@
             </div>
         </div>
         <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
-    
+
     </header>
-    <section></section>
-    
+    <section>
+        <!-- form validation-------------------------------------------------------------------------------------------- -->
+        <div class="contact-us" style="padding-top: 100px;">
+            <h3 align="center" style="margin: 30px;">Provide us your contact info for better communication</h3>
+            <form id="Form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Clear previous errors
+                document.getElementById('nameError').textContent = '';
+                document.getElementById('emailError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+
+                // Get form values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value.trim();
+
+                let isValid = true;
+
+                // Name validation
+                if (name === '') {
+                    document.getElementById('nameError').textContent = 'Name is required.';
+                    isValid = false;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === '') {
+                    document.getElementById('emailError').textContent = 'Email is required.';
+                    isValid = false;
+                } else if (!emailRegex.test(email)) {
+                    document.getElementById('emailError').textContent = 'Enter a valid email address.';
+                    isValid = false;
+                }
+
+                // Password validation
+                if (password === '') {
+                    document.getElementById('passwordError').textContent = 'Password is required.';
+                    isValid = false;
+                } else if (password.length < 6) {
+                    document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long.';
+                    isValid = false;
+                }
+
+                // If form is valid, submit the data
+                if (isValid) {
+                    alert('Form submitted successfully!');
+                    // You can submit the form data using AJAX or any other method here
+                }
+            });
+        </script>
+
+
+
+        <div class="aboutUs-main-container">
+            <div class="developer-containers">
+                <div class="" style="margin: 30px 0;">
+                    <h3 align="center">Developers</h3>
+                </div>
+                <div class="developer-1-2">
+                    <dev class="developer-1-details">
+                        <a href="cv/sandip/sandip.html"><img id="dev-img" src="images/sandip1.png" alt="sandip"></a>
+                        <h3>Sandip Meche</h3>
+                        <span>Contact: 9807944252</span><br><br>
+                        <img src="../../icons/instagram.png" alt="instagram" width="20px">
+                        <img src="../../icons/x.png" alt="x" width="20px">
+                        <img src="../../icons/linkden.png" alt="linkden" width="20px">
+                    </dev>
+                    <dev class="developer-1-details">
+                        <a href="cv/biraj/biraj.html"><img id="dev-img" src="images/biraj.png" alt="sandip"></a>
+                        <h3>
+                            Biraj Sharma
+                        </h3>
+                        <span>Contact: 9807944252</span><br><br>
+                        <img src="../../icons/instagram.png" alt="instagram" width="20px">
+                        <img src="../../icons/x.png" alt="x" width="20px">
+                        <img src="../../icons/linkden.png" alt="linkden" width="20px">
+                    </dev>
+
+                    <dev class="developer-1-details">
+                        <a href="cv/chadani/chadani.html"><img id="dev-img" src="images/chadani.png" alt="sandip"></a>
+                        <h3>Chadani Banjade</h3>
+                        <!-- <span>Contact: 9807944252</span><br><br> -->
+                        <img src="../../icons/instagram.png" alt="instagram" width="20px">
+                        <img src="../../icons/x.png" alt="x" width="20px">
+                        <img src="../../icons/linkden.png" alt="linkden" width="20px">
+                    </dev>
+                    <dev class="developer-1-details">
+                        <a href="cv/abiram/abiram.html"><img id="dev-img" src="images/abiram.png" alt="sandip"></a>
+                        <h3>Abiram Bhatta</h3>
+                        <span>Contact: 9807944252</span><br><br>
+                        <img src="../../icons/instagram.png" alt="instagram" width="20px">
+                        <img src="../../icons/x.png" alt="x" width="20px">
+                        <img src="../../icons/linkden.png" alt="linkden" width="20px">
+                    </dev>
+                    <dev class="developer-1-details">
+                        <a href="cv/akendra/akendra.html"><img id="dev-img" src="images/akendra.png" alt="sandip"></a>
+                        <h3>Yakendra Bam Rajawar</h3>
+                        <span>Contact: 9807944252</span><br><br>
+                        <img src="../../icons/instagram.png" alt="instagram" width="20px">
+                        <img src="../../icons/x.png" alt="x" width="20px">
+                        <img src="../../icons/linkden.png" alt="linkden" width="20px">
+                    </dev>
+
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
 
     <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
     <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
-        
+
         <div class="times-footer" style="width: 25%;">
             <h1>Times</h1>
             <p style="margin-top: 20px;">You have further questions about Times? Then do not hesitate to contact us.</p>
@@ -48,23 +181,27 @@
         <div style="width: 25%;">
             <p style="margin:  55px 50px ;"> 2025 Times . All rights reserved.</p>
         </div>
-        <div class="social_media"  style="width: 25%;">
+        <div class="social_media" style="width: 25%;">
             <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
             <a href="#"><img src="../../icons/facebook.png" alt="Facebook" width="60px"></a>
             <a href="#"><img src="../../icons/x.png" alt="Twitter" width="60px"></a>
             <a href="#"><img src="../../icons/instagram.png" alt="Instagram" width="60px"></a>
         </div>
-        <div class="contact_info"  style="width: 25%; font-family: 'Ubuntu', sans-serif;">
+        <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
             <form>
                 <span>Email</span><br>
-                <input type="number" placeholder="Enter your email" style="padding: 5px; width: 350px; margin: 10px 0;"><br>
+                <input type="number" placeholder="Enter your email"
+                    style="padding: 5px; width: 350px; margin: 10px 0;"><br>
                 <span>Messaage</span><br>
-                <textarea name="message" id="message"  style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
-                <input type="submit" placeholder="submit" style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
+                <textarea name="message" id="message"
+                    style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
+                <input type="submit" placeholder="submit"
+                    style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
             </form>
-            
+
         </div>
     </footer>
     <!-- footer ends --------------------------------------------------------------------------------------------------------------------- -->
 </body>
+
 </html>

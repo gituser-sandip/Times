@@ -78,7 +78,7 @@ nav ul li a:hover{
 
 /* search by cateogery ------------------------------------------------------------------------------------------------------  */
 .categories-main-container{
-    width: 100%;
+    width: 2500px;
     height: 800px;
     margin-top: 100px;
     background: #eeecea;
@@ -88,9 +88,14 @@ nav ul li a:hover{
     flex-direction: column;
     position: sticky;
     top: 0;
-    padding: 30px;
-    padding-top: 0px;
     font-family: 'Ubuntu', sans-serif;  
+    padding-left: 45px;
+}
+.categories-main-container ul{
+    padding: 0;
+}
+.categories-main-container li{
+    padding-right: 0;
 }
 .category{
     font-size: 20px;
@@ -98,20 +103,22 @@ nav ul li a:hover{
     margin-bottom: 10px;
     font-family: sans-serif;
     padding: 20px;
+    padding-right: 0;
 }
 .category a{
     text-decoration: none;
     color: #333;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-family: sans-serif;
     padding: 20px;
+    font-weight: 700;
 }
 .category li,.brand li, .price li{
     margin: 10px;
 }
 .brand{
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     margin-bottom: 10px;
     font-family: sans-serif;
@@ -121,28 +128,35 @@ nav ul li a:hover{
 .brand a{
     text-decoration: none;
     color: #333;
-    font-size: 20px;
+    font-size: 14px;
     margin-bottom: 10px;
     font-family: sans-serif;
     padding: 20px;
+    font-weight: 700;
 }
 
 .price{
-    font-size: 20px;
+    font-size: 16px;
     color: #000000;
     margin-bottom: 10px;
     font-family: sans-serif;
     padding: 20px;
     padding-top: 0;
 }
-/* products sections */
+
+.price p{
+    padding: 5px 0px;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+/* procucts sections */
 .watch-item {
-    width: 22%;
+    min-width: 22%;
     height: auto;
     box-sizing: border-box;
     color: rgb(255, 145, 0);
     padding: 20px 0px;
-    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,10 +169,10 @@ nav ul li a:hover{
 
 .watch-image {
     width: 220px;
-    height: 220px;
+    height: auto;
     border-radius: 30px;
     object-fit: cover;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .watch-price {
@@ -166,9 +180,7 @@ nav ul li a:hover{
     color: rgb(255, 145, 0);
     font-weight: 500;
     margin: 10px 0px;
-    text-align: left;
 }
-
 
 /* Hover effect for items */
 .watch-image:hover {
@@ -182,7 +194,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:10px;
+    padding: 10px;
 }
 
 .img_collection {
@@ -216,11 +228,11 @@ nav ul li a:hover{
 /* footer designing  */
 
 footer{
-    margin-top: 30px;
     width: 100%;
     height: auto;
     background: #1D347A;
     padding: 20px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
 }
