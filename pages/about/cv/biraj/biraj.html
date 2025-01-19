@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biraj Sharma - CV</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            padding-top: 100px;
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            background-color: #e8dfd9;
+            width: 35%;
+            padding: 20px;
+            color: #333;
+            position: relative;
+        }
+
+        .sidebar::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #e6ccb2 0%, #d1bdae 100%);
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .sidebar>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .main-content {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .photo-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #c4bdb7;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        .photo-placeholder img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 18px;
+            color: #6c757d;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .skills span {
+            display: block;
+            background: #d3c7be;
+            color: #333;
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        /* nav section coding starts */
+        .nav_main_container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            z-index: +3;
+            background: inherit;
+        }
+
+        .nav_container {
+            width: 80%;
+            height: 75px;
+            display: flex;
+            padding: 5px 10px;
+            background: #1751f4;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+
+        .logo {
+            width: 20%;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: 90px;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .nav_section {
+            width: 80%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            width: 100%;
+            padding: 20px 0px;
+            position: relative;
+
+        }
+
+        nav ul li a {
+            text-align: center;
+            padding: 20px 60px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+        }
+
+        #about a {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+
+
+        nav ul li a:hover {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+
+        }
+
+        /* footer designing  */
+
+        footer {
+            width: 100%;
+            height: auto;
+            background: #1D347A;
+            padding: 20px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
+        <div class="nav_main_container">
+            <div class="nav_container">
+                <div class="logo">
+                    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 35px;">Times</h1>
+                </div>
+                <nav class="nav_section">
+                    <ul style="margin-top: 2px;">
+                        <li id="home"><a href="../../../../index.html">Home</a></li>
+                        <li id="blog"><a href="../../../../pages/blog/blog.html">Blog</a></li>
+                        <li id="product"><a href="../../../../pages/product/product.html">Products</a></li>
+                        <li id="research"><a href="../../../../pages/research/research.html">Research</a></li>
+                        <li id="about"><a href="../../about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
+    </header>
+    <section>
+            <div class="container">
+                <div class="sidebar">
+                    <div class="photo-placeholder"></div>
+                    <div class="contact-info">
+                        <h1>Biraj Sharama</h1>
+                        <p>Everest Colony, Tokha 10, Kathmandu</p>
+                        <p>Email: birajsharama@gmail.com</p>
+                        <p>Phone: +977 9846228468</p>
+                    </div>
+                    <section>
+                        <h2>Skills</h2>
+                        <div class="skills">
+                            <span>Advanced Communication</span>
+                            <span>Teamwork</span>
+                            <span>Problem-Solving</span>
+                            <span>Basic Office Tools</span>
+                        </div>
+                    </section>
+        
+                    <section>
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>English</li>
+                            <li>Nepali</li>
+                            <li>Hindi</li>
+                        </ul>
+                    </section>
+                </div>
+        
+                <div class="main-content">
+                    <section>
+                        <h2>Profile</h2>
+                        <p>A passionate and dedicated Computing student specializing in Artificial Intelligence. Highly motivated to build a career in technology, leveraging creativity and technical expertise to craft engaging solutions. Excels in teamwork, problem-solving, and continuous learning to stay updated with emerging technologies.</p>
+                    </section>
+        
+                    <section>
+                        <h2>Education</h2>
+                        <ul>
+                            <li><strong>Islington College</strong> - Currently pursuing BSc (Hons) Computing with AI</li>
+                            <li><strong>ACE Higher Secondary School</strong> - Grade 12, Passed in 2024</li>
+                            <li><strong>Triyog High School</strong> - SEE, Passed in 2022</li>
+                        </ul>
+                    </section>
+        
+                    <section>
+                        <h2>Hobbies</h2>
+                        <ul>
+                            <li>Playing cricket</li>
+                            <li>Listening to music</li>
+                            <li>Travelling</li>
+                            <li>Hiking</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </body>
+        </html>
+        
+        
+    </section>
+
+    <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
+    <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
+
+        <div class="times-footer" style="width: 25%;">
+            <h1>Times</h1>
+            <p style="margin-top: 20px;">You have further questions about Times? Then do not hesitate to contact us.</p>
+        </div>
+        <div style="width: 25%;">
+            <p style="margin:  55px 50px ;"> 2025 Times . All rights reserved.</p>
+        </div>
+        <div class="social_media" style="width: 25%;">
+            <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
+            <a href="#"><img src="../../.../../../../icons/facebook.png" alt="Facebook" width="60px"></a>
+            <a href="#" alt="Twitter" width="60px"></a>
+            <a href="https://www.instagram.com/_birajkafle99?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../../.../../../../icons/instagram.png" alt="Instagram" width="60px"></a>
+        </div>
+        <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
+            <form>
+                <span>Email</span><br>
+                <input type="number" placeholder="Enter your email"
+                    style="padding: 5px; width: 350px; margin: 10px 0;"><br>
+                <span>Messaage</span><br>
+                <textarea name="message" id="message"
+                    style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
+                <input type="submit" placeholder="submit"
+                    style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
+            </form>
+
+        </div>
+    </footer>
+    <!-- footer ends --------------------------------------------------------------------------------------------------------------------- -->
+</body>
+
+</html>

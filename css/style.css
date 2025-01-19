@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+body{
+    background: #DEF4F6;
+}
 
 
 /* nav section coding starts */
@@ -146,12 +148,12 @@ nav ul li a:hover{
   }
   .blog_highlight_container, .product_highlight_container, .research_highlight_container{
     width: 80%;
-    
   }
   .blog_highlight_section, .research_highlight_section{
     display: flex;
     flex-direction: row;
     width: 100%;
+    background: #DEF4F6;
   }
   .blog_highlight_img, .blog_highlight_content, .research_highlight_img, .research_highlight_content{
     width: 50%;
@@ -160,14 +162,22 @@ nav ul li a:hover{
     margin-top: 50px;
   }
 
-/* highlight product section coding  */
 
+
+/* highlight product section coding ------------------------------------------------------------------------------- */
+.product_highlight_section{
+    width: 100%;
+    height: auto;
+    background: #DEF4F6;
+    padding: 30px;
+}
 /* Slider Section */
 .p_collection_text {
     font-family: "Quicksand", serif;
     font-size: 40px;
     padding: 200px;
     margin-top: 30px;
+    color: #167A4E;
 }
 
 .p_img_slider {
@@ -196,7 +206,7 @@ nav ul li a:hover{
 .watch-item {
     min-width: calc(25% - 20px);
     box-sizing: border-box;
-    color: tan;
+    color: rgb(255, 145, 0);
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -204,7 +214,7 @@ nav ul li a:hover{
     justify-content: center;
     backdrop-filter: blur(30px);
     border-radius: 20px;
-    background: #ccc;
+    background: #8BA4A5;
 }
 
 .watch-image {
@@ -274,15 +284,29 @@ nav ul li a:hover{
 .dot.active {
     opacity: 1;
 }
-
-.show-more {
+/* buy now button------------------------------------------------------------- */
+.buyNow {
     text-align: center;
     margin-top: 10px;
-    width: 120px;
+    width: 140px;
     height: 40px;
-    background: #ccc;
-    border-radius: 10px;
+    background: #E5924A;
+    border-radius: 5px;
     cursor: pointer;
+    border: none;
+}
+.buyNow:hover {
+    background: #d69f6e;
+    transition: all 0.3s ease;
+    transform: scale(1.03);
+    font-size: 16px;
+}
+.buyNow a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px;
 }
 
 .show-morebtn {

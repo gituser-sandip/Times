@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../men's_collection/css/product.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
+        <div class="nav_main_container">
+            <div class="nav_container">
+                <div class="logo">
+                    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 35px;">Times</h1>
+                </div>
+                <nav class="nav_section">
+                    <ul style="margin-top: 2px;">
+                        <li id="home"><a href="../../../../../index.html">Home</a></li>
+                        <li id="blog"><a href="../../../../blog/blog.html">Blog</a></li>
+                        <li id="product"><a href="../../../product.html">Products</a></li>
+                        <li id="research"><a href="../../../../research/research.html">Research</a></li>
+                        <li id="about"><a href="../../../../about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
+    </header>
+
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="../../../../../../images/1.png" alt="Watch">
+            </div>
+
+            <div class="product-info">
+                <h1>Luxury Watch</h1>
+
+                <div class="price">
+                    <span class="old-price">$155.00</span>
+                    <span class="current-price">$99.00</span>
+                    <span>& Free Shipping</span>
+                </div>
+
+                <p>A premium watch with excellent craftsmanship and style.</p>
+
+                    <button class="add-to-cart addToCart" id="cart" onclick="buyNow()">Buy Now</button>
+                    <button class="add-to-cart addToCart" id="cart" onclick="addToCart()">Add To Cart</button>
+            
+                <div class="features">
+                    <div class="feature">✓ No-Risk Money Back Guarantee!</div>
+                    <div class="feature">✓ No Hassle Refunds</div>
+                    <div class="feature">✓ Secure Payments</div>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Guaranteed Safe Checkout</h3>
+                    <div class="payment-icons">
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart()
+        {
+             alert("Item has been added to the cart"); 
+        }
+        function buyNow(){
+            alert("Congratulation! Item has been bought");
+        }
+    </script>
+</body>
+
+</html>

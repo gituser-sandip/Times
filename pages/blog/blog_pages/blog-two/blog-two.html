@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times | blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* nav section coding starts --------------------------------------------------------------------------------------------------------- */
+        .nav_main_container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            z-index: +3;
+            background: inherit;
+        }
+
+        .nav_container {
+            width: 80%;
+            height: 75px;
+            display: flex;
+            padding: 5px 10px;
+            background: #1751f4;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+
+        .logo {
+            width: 20%;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: 90px;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .nav_section {
+            width: 80%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            width: 100%;
+            padding: 20px 0px;
+            position: relative;
+
+        }
+
+        nav ul li a {
+            text-align: center;
+            padding: 20px 60px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 800;
+        }
+
+        #blog a {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+
+
+        nav ul li a:hover {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+
+        }
+
+        /* blog secion design starts ---------------------------------------------------------------------- */
+
+        .blog-main-container {
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 120px;
+            flex-direction: column;
+        }
+
+        .blog-wlcm-text {
+            color: #000000;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .blog-one-section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blog-one-img,
+        .blog-one-content {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .blog-section p {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        /* read more button */
+        .readMore-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .readMore {
+            width: 140px;
+            height: 40px;
+            padding: 10px;
+            background: #1751f4;
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+
+        .readMore a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* blog secion design ends ---------------------------------------------------------------------- */
+
+
+
+        /* footer designing  */
+
+        footer {
+            width: 100%;
+            height: auto;
+            background: #1D347A;
+            padding: 20px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
+        <div class="nav_main_container">
+            <div class="nav_container">
+                <div class="logo">
+                    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 35px;">Times</h1>
+                </div>
+                <nav class="nav_section">
+                    <ul style="margin-top: 2px;">
+                        <li id="home"><a href="../../../../index.html">Home</a></li>
+                        <li id="blog"><a href="../../blog.html">Blog</a></li>
+                        <li id="product"><a href="../../../product/product.html">Products</a></li>
+                        <li id="research"><a href="../../../research/research.html">Research</a></li>
+                        <li id="about"><a href="../../../about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
+
+    </header>
+    <section>
+        <div style="display: flex; justify-content: center;">
+            <div class="blog-main-container">
+                <h1 class="blog-wlcm-text" align="center">Welcome to the blog of Times</h1>
+                <div class="blog-section">
+                    <div class="blog-one-section">
+                        <div class="blog-one-img">
+                            <img src="../../images/Wearable-technology-in-healthcare.jpg" alt="Blog 1" width="600px">
+                            <img src="../../images/Apple-Watch-S9-hero-230912_Full-Bleed-Image.jpg.xlarge_2x.jpg" alt="Blog 1" width="600px" style="padding-top: 40px;">
+                        </div>
+                        <div class="blog-one-content">
+                            <h2>Technological advancements with watch design and sales.</h2>
+                            <p>There are various relevant topics that integrate technological advancements with watch
+                                design and sales.
+                                1. Smartwatches and wearable tech <br>
+                                Modern technologies have merged themselves with traditional watch designs. Smartwatches
+                                do more than just tell time.
+                                <br><br>Health Monitoring: The smartwatch can track the rate of one's heart, sleeping
+                                patterns, steps, and even falls general value addition for health and fitness
+                                enthusiasts.
+                                <br><br>
+                                Sustainable materials: Using eco-friendly materials in watch manufacturing.
+                                <br><br>
+                                Connectivity: It syncs with a smartphone to allow wrist notifications of calls and
+                                messages, along with some app features.
+                                Personalization: Users can change the face and band to match
+                                what feels suitable for them.
+
+                                2. Augmented Reality and Virtual Try-Ons
+                                Using augmented reality to let costumers virtually try on
+                                watches online.
+                                3. Designs that are Sustainable and Eco-Friendly
+                                An ongoing advancement in technology is leading to eco-
+                                friendly watches that are manufactured by sustainable
+                                materials and processes. One such example includes:
+                                Solar-Powered Watches: These watches are equipped with a
+                                pair of solar cells that convert light to power, which reduces
+                                further battery replacement.
+                                Recycled Materials: To create watch designs that are
+                                environment-friendly, brands are using recycled plastics and
+                                metals, among other materials.
+                                4. Artificial Intelligence in Design and Manufacturing: AI is used
+                                through several stages of designing and manufacturing the
+                                watch:
+                                Predictive Analytics: AI can help with consumer data analytics
+                                to predict/design what the customers might like to buy next, so
+                                brands are somewhat ready with a product in stock that sells.
+                                Automated Production: The automation of work, powered by AI,
+                                works toward greater accuracy with speed in the process of
+                                manufacture, eventually leading to less cost.
+                                5. Hybrid Watches
+                                These are hybrid watches, which combine the classic analog
+                                watch with smart features in a modern way. The idea is to offer
+                                such modern timepieces to consumers who find themselves
+                                missing out on a sleek and classical appearance of a traditional
+
+                                watch while looking for fitness tracking and notifications at the
+                                same time.
+                                One emerging smartwatch trend is adding advanced health
+                                monitoring features. Future developments could include:
+                                Monitoring Blood Oxygen: Measure a person's blood oxygen to
+                                draw inferences for respiratory health.
+                                Glucose Monitoring: Non-invasive methods for the
+                                measurement of blood glucose levels for diabetic patients.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="readMore-btn">
+                        <button class="readMore" align="center"><a href="blog-one/blog-one.html">Read More</a></button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
+    <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
+
+        <div class="times-footer" style="width: 25%;">
+            <h1>Times</h1>
+            <p style="margin-top: 20px;">You have further questions about Times? Then do not hesitate to contact us.</p>
+        </div>
+        <div style="width: 25%;">
+            <p style="margin:  55px 50px ;"> 2025 Times . All rights reserved.</p>
+        </div>
+        <div class="social_media" style="width: 25%;">
+            <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
+            <a href="#"><img src="../../../../../../icons/facebook.png" alt="Facebook" width="60px"></a>
+            <a href="#"><img src="../../../../../../icons/x.png" alt="Twitter" width="60px"></a>
+            <a href="#"><img src="../../../../../../icons/instagram.png" alt="Instagram" width="60px"></a>
+        </div>
+        <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
+            <form>
+                <span>Email</span><br>
+                <input type="number" placeholder="Enter your email"
+                    style="padding: 5px; width: 350px; margin: 10px 0;"><br>
+                <span>Messaage</span><br>
+                <textarea name="message" id="message"
+                    style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
+                <input type="submit" placeholder="submit"
+                    style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
+            </form>
+
+        </div>
+    </footer>
+    <!-- footer ends --------------------------------------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
