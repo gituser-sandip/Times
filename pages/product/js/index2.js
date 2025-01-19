@@ -14,7 +14,7 @@ const totalViews2 = totalItems2 - itemsPerView2 + 1;
 for (let i = 0; i < totalViews2; i++) {
     const dot = document.createElement('div');
     dot.classList.add('dot');
-    dot.addEventListener('click', () => showView2(i));
+    dot.onclick = () => showView2(i);
     dotsContainer2.appendChild(dot);
 }
 
@@ -41,8 +41,8 @@ function showView2(index) {
     updateButtons2();
 }
 
-prev2.addEventListener('click', () => showView2(currentIndex2 - 1));
-next2.addEventListener('click', () => showView2(currentIndex2 + 1));
+prev2.onclick = () => showView2(currentIndex2 - 1);
+next2.onclick = () => showView2(currentIndex2 + 1);
 
 showView2(0);
 updateButtons2();

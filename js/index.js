@@ -62,7 +62,7 @@ function showSlides() {
  for (let i = 0; i < totalViews; i++) {
      const dot = document.createElement('div');
      dot.classList.add('dot');
-     dot.addEventListener('click', () => showView(i));
+     dot.onclick = () => showView(i);
      dotsContainer.appendChild(dot);
  }
 
@@ -89,8 +89,8 @@ function showSlides() {
      updateButtons();
  }
 
- prev.addEventListener('click', () => showView(currentIndex - 1));
- next.addEventListener('click', () => showView(currentIndex + 1));
+ prev.onclick = () => showView(currentIndex - 1);
+ next.onclick = () => showView(currentIndex + 1);
 
  showView(0);
  updateButtons();
