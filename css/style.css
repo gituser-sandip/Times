@@ -348,6 +348,12 @@ nav ul li a:hover{
    
 }
 
+/* Rating star */
+.rating :hover{
+    color: yellow;
+    cursor: pointer;
+}
+
 /* footer designing  */
 
 footer{
