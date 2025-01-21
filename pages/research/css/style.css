@@ -26,7 +26,7 @@
     border-radius: 15px;
 }
 .logo{
-    width: 20%;
+    width: 15%;
     color: #ffffff;
     font-weight: bolder;
     font-size: 90px;
@@ -35,7 +35,7 @@
     margin-left: 15px;
 }
 .nav_section{
-    width: 80%;
+    width: 85%;
 }
 
 nav ul{
@@ -89,6 +89,15 @@ nav ul li a:hover{
     width: 80%;
     height: auto;
     padding: 30px;
+}
+.homepage-img{
+    width: 50%;
+    border: 1px solid red;
+    padding: 20px;
+}
+.homepage-contents{
+    width:100%;
+    border: 1px solid red;
 }
 /* footer designing  */
 
