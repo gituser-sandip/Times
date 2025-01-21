@@ -92,12 +92,15 @@ nav ul li a:hover{
 }
 .homepage-img{
     width: 50%;
-    border: 1px solid red;
     padding: 20px;
+    background: #ccc;
 }
 .homepage-contents{
     width:100%;
-    border: 1px solid red;
+    background: #ccc;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 /* footer designing  */
 
