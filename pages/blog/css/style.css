@@ -75,7 +75,9 @@ nav ul li a:hover{
 
 }
 /* blog secion design starts ---------------------------------------------------------------------- */
-
+h1, h2{
+    font-family: 'Ubuntu', sans-serif;
+}
 .blog-main-container{
     width: 80%;
     height: auto;

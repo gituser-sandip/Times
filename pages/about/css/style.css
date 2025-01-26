@@ -55,7 +55,7 @@ nav ul li a{
     font-weight: 800;
 }
 
-#home a{
+#about a{
     color: black;
     background-color: #ffffff;
     border-radius: 40px 0 40px 0;
@@ -135,6 +135,10 @@ nav ul li a:hover{
 }
 
 /* form validation */
+
+#name, #email, #message{
+    
+}
 .contact-us{
     width: 80%;
    margin-left:150px;
