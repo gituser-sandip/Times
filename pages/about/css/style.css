@@ -137,7 +137,7 @@ nav ul li a:hover{
 /* form validation */
 
 #name, #email, #message{
-    
+
 }
 .contact-us{
     width: 80%;
@@ -163,6 +163,7 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 .error {
     color: red;
