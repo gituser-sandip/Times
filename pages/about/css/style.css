@@ -55,7 +55,7 @@ nav ul li a{
     font-weight: 800;
 }
 
-#home a{
+#about a{
     color: black;
     background-color: #ffffff;
     border-radius: 40px 0 40px 0;
@@ -135,9 +135,11 @@ nav ul li a:hover{
 }
 
 /* form validation */
-.contact-us{
+
+
+.rate-us{
     width: 80%;
-   margin-left:150px;
+    margin-left:150px;
 }
 #Form {
     max-width: 100%;
@@ -146,6 +148,7 @@ nav ul li a:hover{
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 .form-group {
     margin-bottom: 15px;
@@ -159,6 +162,7 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 .error {
     color: red;
