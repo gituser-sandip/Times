@@ -17,7 +17,7 @@ const totalViews = totalItems - itemsPerView + 1;
 for (let i = 0; i < totalViews; i++) {
   const dot = document.createElement('div');
   dot.classList.add('dot');
-  dot.onclick = () => showView(i);
+  dot.onclick = function() {showView(i)};
   dotsContainer.appendChild(dot);
 }
 
@@ -48,8 +48,8 @@ function showView(index) {
 }
 
 /*To show the previous and next images when the button's are pressed*/
-prev.onclick = () => showView(currentIndex - 1);
-next.onclick = () => showView(currentIndex + 1);
+prev.onclick = function() {showView(currentIndex - 1)};
+next.onclick = function() {showView(currentIndex + 1)};
 
 /*Initialize slider view*/
 showView(0);

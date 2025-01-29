@@ -58,7 +58,6 @@ function showSlides() {
  const totalItems = items.length;
  const totalViews = totalItems - itemsPerView + 1;
 
- // Create dots
  for (let i = 0; i < totalViews; i++) {
      const dot = document.createElement('div');
      dot.classList.add('dot');
