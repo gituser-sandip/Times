@@ -105,6 +105,7 @@ nav ul li a:hover{
 
 }
 
+
 /* nav section coding ends---------------------------------- */
 
 
@@ -513,6 +514,85 @@ nav ul li a:hover{
     transition: all 0.7s ease;
 }
 
+/* search by cateogery ------------------------------------------------------------------------------------------------------  */
+.categories-main-container{
+    width: 1000px;
+    height: 800px;
+    margin-top: 100px;
+    background: #eeecea;
+    margin-left: 80px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;  
+    padding-left: 45px;
+}
+.categories-main-container ul{
+    padding: 0;
+}
+.categories-main-container li{
+    padding-right: 0;
+}
+.category{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-right: 0;
+}
+.category a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    font-weight: 700;
+}
+.category li,.brand li, .price li{
+    margin: 10px;
+}
+.brand{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+}
+.brand a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.price{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.price p{
+    padding: 5px 0px;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.shopingcart-cotainer{
+    
+}
 /* Product page coding ends---------------- */
 
 

@@ -5,9 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timems | Men's product</title>
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/style.css">
     <header>
+        <style>
+            .logo {
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        #product a {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+        .addTo{
+        text-align: center;
+        margin-top: 5px;
+        width: 240px;
+        height: 40px;
+        background: #dc2c30;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        }
+
+        .addTo:hover{
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+        font-size: 15px;
+        background: #e05053;
+        }
+
+        /* procucts sections */
+        .watch-item {
+        min-width: 22%;
+        height: auto;
+        box-sizing: border-box;
+        color: rgb(255, 145, 0);
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(100px);
+        border-radius: 10px;
+        background: #eeecea;
+        font-family: 'Ubuntu Mono', monospace;
+        }
+
+.watch-image {
+    width: 220px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.watch-price {
+    font-size: 20px;
+    color: rgb(255, 145, 0);
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* Hover effect for items */
+.watch-image:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+/* Product page image collection */
+.img_collection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img_collection {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover; 
+    gap: 10px;
+}
+        </style>
 
         <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
         <div class="nav_main_container" style="position: fixed;">
@@ -38,8 +125,6 @@
                     <ul>
                         <li><a href="../women's_collection/female.html">Women's Collection</a></li>
                         <li><a href="#">Men's Collection</a></li>
-                        <li><a href="#">Accessories Collection</a></li>
-                        <li><a href="#">Sport Watch Collection</a></li>
                     </ul>
                 </div>
                 <div class="brand">
@@ -49,17 +134,7 @@
                         <li><a href="#">Patek Philipe</a></li>
                         <li><a href="#">Omega</a></li>
                         <li><a href="#">Cartier</a></li>
-                        <li><a href="#">Richard Mille</a></li>
-                        <li><a href="#">Hamilton</a></li>
-                        <li><a href="#">Lee Cooper</a></li>
                     </ul>
-                </div>
-    
-                <div class="price">
-                    <h2 style="margin-bottom: 25px;">Price range</h2>
-                    <input type="range" min="10000" max="100000" value="10000" id="price-range">
-                    <p>Min: $10,000</p>
-                    <p>Max: $1,00,000</p>
                 </div>
             </div>
             <div class="img_collection_container_main">
@@ -68,242 +143,99 @@
                     <div class="img_collection">
                         <div class="watch-item">
                             <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$19,000</p>
+                            <h2 class="watch-name"><b>Submanier</b></h2>
+                            <p class="watch-price">$7,297</p>
                             <button class="addTo" id="cart" onclick="addToCart()">Add To Cart</button>
                         </div>
                         <div class="watch-item">
                             <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$10,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                            <h2 class="watch-name">Daytona</h2>
+                            <p class="watch-price">$13,818</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
                             <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$12,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                            <h2 class="watch-name">GMT-Master II</h2>
+                            <p class="watch-price">$9,374</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
                             <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$1700</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                            <h2 class="watch-name">Datejust</h2>
+                            <p class="watch-price">$948</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/nautilus.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">nautilus</h2>
+                            <p class="watch-price">$9,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/5.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$16,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/grand-complications.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">grand-compile</h2>
+                            <p class="watch-price">$1,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/6.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/aquanaut.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">aquanaut</h2>
+                            <p class="watch-price">$7,688</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/vintage.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Vintage</h2>
                             <p class="watch-price">$15,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/7.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/omega/speedmaster-racing.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Speedmaster I</h2>
                             <p class="watch-price">$17,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/8.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/omega/speedmaster-reduced.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Speedmaster II</h2>
                             <p class="watch-price">$10,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/omega/seamaster.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Seamaster</h2>
                             <p class="watch-price">$19,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/omega/seamaster-300.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Master-300</h2>
                             <p class="watch-price">$20,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/cartier/ronde-de-cartier.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Ronde-De</h2>
                             <p class="watch-price">$11,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/cartier/ballon-bleu.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Ballon-Bleu</h2>
                             <p class="watch-price">$13,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/5.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/cartier/tortue.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">tortue</h2>
                             <p class="watch-price">$16,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                         <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/6.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
+                            <a href="man's_product_page/1.html"><img src="../../images/cartier/rotonde-dr-cartier.webp" alt="Rolex" class="watch-image"></a>
+                            <h2 class="watch-name">Dr-Cartier</h2>
                             <p class="watch-price">$21,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/7.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$3,1000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/8.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$10,100</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$31,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$14,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$18,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$30,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$19,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$10,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$12,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$1700</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/5.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$16,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/6.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$15,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/7.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$17,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/8.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$10,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$19,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$20,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$11,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$13,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/5.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$16,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/6.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$21,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/7.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$3,1000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/8.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$10,100</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/1.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$31,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/2.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$14,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/3.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$18,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
-                                Cart</button>
-                        </div>
-                        <div class="watch-item">
-                            <a href="man's_product_page/1.html"><img src="../../images/4.webp" alt="Rolex" class="watch-image"></a>
-                            <h2 class="watch-name">Rolex</h2>
-                            <p class="watch-price">$30,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
                                 Cart</button>
                         </div>
                     </div>
