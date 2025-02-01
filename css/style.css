@@ -424,26 +424,20 @@ nav ul li a:hover{
     right: 2%; 
 }
 
-#prev2 {
-    left: 2%; 
-}
 
-#next2 {
-    right: 2%; 
-}
 
-.button:hover, .button2:hover {
+.button:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
 /* Dots for navigation */
-#dots, #dots2 {
+#dots {
     text-align: center;
     margin-top: 10px;
 }
 
-.dot, .dot2 {
+.dot{
     display: inline-block;
     width: 40px;
     height: 4px;
@@ -454,7 +448,7 @@ nav ul li a:hover{
     opacity: 0.2;
 }
 
-.dot.active, .dot2.active {
+.dot.active {
     opacity: 1;
 }
 
