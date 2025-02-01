@@ -5,9 +5,40 @@
 }
 
 body{
-    background: #DEF4F6;
+    background: #F9FCFF;
 }
 
+/* Universal button design  */
+
+.buyNow{
+    width: 140px;
+    height: 40px;   
+    padding: 10px;
+    background: #1751f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.8;
+}
+.buyNow a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.buyNow:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.buttons-container{
+   margin: 30px 0;
+   width: 100%;
+   display: flex; 
+   justify-content: center; 
+    
+}
+
+/* Universal button design ends */
 
 /* nav section coding starts */
 .nav_main_container{
@@ -26,7 +57,7 @@ body{
     height: 75px;
     display: flex;
     padding: 5px 10px;
-    background: #1751f4;
+    background: #081F5C;
     margin-top: 10px;
     border-radius: 15px;
 }
@@ -61,14 +92,7 @@ nav ul li a{
     font-weight: 800;
 }
 
-#home a{
-    color: black;
-    background-color: #ffffff;
-    border-radius: 40px 0 40px 0;
-    box-shadow: 0 0 10px #ffffff;
-    transition: 0.6s ease;
-    font-size: 17px;
-  }
+
 
 
 nav ul li a:hover{
@@ -81,6 +105,11 @@ nav ul li a:hover{
 
 }
 
+/* nav section coding ends---------------------------------- */
+
+
+
+/* home page */
 /*main img slider -----------------------------------------------  */
 .main_img{
     width: 100%;
@@ -154,7 +183,6 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     width: 100%;
-    background: #DEF4F6;
   }
   .blog_highlight_img, .blog_highlight_content, .research_highlight_img, .research_highlight_content{
     width: 50%;
@@ -170,7 +198,6 @@ nav ul li a:hover{
 .product_highlight_section{
     width: 100%;
     height: auto;
-    background: #DEF4F6;
     padding: 30px;
 }
 /* Slider Section */
@@ -187,7 +214,6 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     min-height: 70px;
-    color: #fff;
     padding: 30px;
 }
 
@@ -196,43 +222,20 @@ nav ul li a:hover{
     overflow: hidden;
     width: 80%;
     max-width: 2300px;
-    padding: 8px;
+    padding: 10px;
+    border: 7px solid #D0E3FF;
+    box-shadow: 0px 0px 10px #111111 inset;
+    padding-top: 20px;
 }
 
 .p_slider{
     display: flex;
     transition: transform 0.4s ease-in-out;
-    gap: 24px;
+    gap: 23px;
+    padding-left: 15px;
 }
 
-.watch-item {
-    min-width: calc(25% - 20px);
-    box-sizing: border-box;
-    color: rgb(255, 145, 0);
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(30px);
-    border-radius: 20px;
-    background: #8BA4A5;
-}
 
-.watch-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.watch-price {
-    font-size: 20px;
-    color: tan;
-    font-weight: 500;
-    margin: 10px 0px;
-}
 
 /* Buttons for navigation */
 #p_prev,
@@ -241,7 +244,6 @@ nav ul li a:hover{
     top: 40%;
     width: 50px;
     height: 50px;
-    background: #fff;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -251,20 +253,19 @@ nav ul li a:hover{
     opacity: 0.7;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s, transform 0.2s;
+    font-weight: 700;
+    font-size: x-large;
 }
 
 #p_prev{
-    left: 2%;
+    left: 1%;
 }
 
 #p_next{
-    right: 2%;
+    right: 1%;
 }
 
-.button:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
+
 
 /* Dots for navigation */
 #dots {
@@ -286,49 +287,8 @@ nav ul li a:hover{
 .dot.active {
     opacity: 1;
 }
-/* buy now button------------------------------------------------------------- */
-.buyNow {
-    text-align: center;
-    margin-top: 10px;
-    width: 140px;
-    height: 40px;
-    background: #E5924A;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-}
-.buyNow:hover {
-    background: #d69f6e;
-    transition: all 0.3s ease;
-    transform: scale(1.03);
-    font-size: 16px;
-}
-.buyNow a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 30px;
-}
 
-.show-morebtn {
-    display: flex;
-    justify-content: center;
 
-}
-
-.show-more:hover {
-    transform: scale(1.03);
-    transition: all 0.3s ease;
-    font-size: 15px;
-}
-
-/* Hover effect for items */
-.watch-item:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.7s ease;
-}
  /* why us section designing */
 .whyus-main-container {
     width: 100%;
@@ -356,12 +316,427 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+/* home page ends */
+
+
+
+/* product page coding starts------------------------- */
+/* Slider Section */
+.collection{
+    font-family: "Quicksand", serif;;
+    font-size: 50px;
+}
+.img_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.img_slider_container {
+    position: relative; 
+    overflow: hidden;
+    width: 80%;
+    max-width: 2300px;
+}
+
+.slider, .slider2 {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 24px;
+}
+.watch-item-container{
+    min-width: calc(25% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    background: #D0E3FF;
+    box-shadow: 0px 0px 10px #a7a7a7;
+}
+
+.watch-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.watch-image {
+    padding: 0;
+    object-fit: cover;
+}
+.watch-price-container{
+    padding-left: 30px;
+}
+.watch-name{
+    color: #081F5C;
+    margin-left: 25px;
+}
+
+.watch-discount-price{
+    color: #334eac;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.watch-price {
+    font-size: 14px;
+    color: #334eac;
+    font-weight: 500;
+    opacity: 0.5;
+    padding:0;
+    margin-bottom: 20px;
+}
+
+/* Hover effect for items */
+.watch-item img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+
+/* Buttons for navigation */
+#prev, #next, #prev2, #next2 {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    background: inherit;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+#prev {
+    left: 2%; 
+}
+
+#next {
+    right: 2%; 
+}
+
+#prev2 {
+    left: 2%; 
+}
+
+#next2 {
+    right: 2%; 
+}
+
+.button:hover, .button2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Dots for navigation */
+#dots, #dots2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot, .dot2 {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background: #000;
+    border-radius: 10%;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.dot.active, .dot2.active {
+    opacity: 1;
+}
+
+/* Product page image collection */
+.img_collection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.img_collection {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover; 
+    gap: 20px;
+}
+
+/* Creating the Add to cart button */
+.addTo{
+    text-align: center;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    background: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addTo:hover{
+    background-color: #c2185b;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.products-section{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mens, .women{
+    width: 80%;
+}
+
+.img_slider_container{
+    margin-top: 50px;
+}
+/* Hover effect for items */
+.watch-item-container img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+
+/* Product page coding ends---------------- */
+
+
+
+
+
+
+/* blog page design starts ---------------------------------------------------------------------- */
+P{
+    text-align: justify;
+}
+h1, h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+.blog-main-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    flex-direction: column;
+}
+.blog-wlcm-text{
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.blog-one-section,.blog-two-section{
+    display: flex;
+    flex-direction: row; 
+}
+.blog-one-img, .blog-one-content, .blog-two-img, .blog-two-content{
+    width: 50%;
+    padding: 20px;
+}
+.blog-one-content, .blog-two-content{
+    box-shadow: 0 0 5px #000000;
+    border-radius: 5px 5px 5px 5px;
+}
+    
+ 
+.blog-one-content p{
+    padding: 5px;
+    font-size: 18px;
+}
+/* read more button */
+.readMore-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.readMore{
+    width: 140px;
+    height: 40px;   
+    padding: 10px;
+    background: #1751f4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+}
+.readMore a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* blog page design ends ---------------------------------------------------------------------- */
+
+
+/* research page design coding starts-------------------------------------- */
+
+.research-main-container{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.research-container{
+    width: 80%;
+    height: auto;
+    padding: 30px;
+}
+.homepage-img{
+    width: 50%;
+    padding: 20px;
+    background: #ccc;
+}
+.homepage-contents{
+    width:100%;
+    background: #ccc;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+/* Research page coding ends */
+
+
+
+
+
+
+/* about us page designing starts ------------------------------------------------------------*/
+.aboutUs-main-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+    flex-direction: column;
+    
+}
+.developer-containers{
+    width: 80%;
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    
+}
+#dev-img{
+    width: 200px;
+    height: auto;
+    background: #e9e9e9;
+    padding-top: 15px;
+}
+.developer-containers span{
+    font-family: 'Ubuntu', sans-serif;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 400;
+}
+.developer-containers h3{
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 22px;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+.developer-1-details{
+    margin: 5px;
+}
+.developer-1-2{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.developer-3-4-5{
+    width: 48%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* form validation */
+
+
+.rate-us{
+    width: 80%;
+    margin-left:150px;
+
+}
+#Form {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.button-form-submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-form-submitbutton:hover {
+    background-color: #45a049;
+}
+/* about us page coding ends------------------------------------------------ */
+
+
+
 /* footer designing  */
 
 footer{
     width: 100%;
     height: auto;
-    background: #1D347A;
+    background: #081F5C;
     padding: 20px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
