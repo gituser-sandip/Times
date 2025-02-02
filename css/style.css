@@ -195,11 +195,7 @@ nav ul li a:hover{
 
 
 /* highlight product section coding ------------------------------------------------------------------------------- */
-.product_highlight_section{
-    width: 100%;
-    height: auto;
-    padding: 30px;
-}
+
 /* Slider Section */
 .p_collection_text {
     font-family: "Quicksand", serif;
@@ -286,6 +282,15 @@ nav ul li a:hover{
 
 .dot.active {
     opacity: 1;
+}
+
+.p-watch-price {
+    font-size: 14px;
+    color: #334eac;
+    font-weight: 500;
+    opacity: 0.5;
+    padding:0;
+    margin-bottom: 20px;
 }
 
 
@@ -385,9 +390,9 @@ nav ul li a:hover{
     font-size: 14px;
     color: #334eac;
     font-weight: 500;
-    opacity: 0.5;
     padding:0;
     margin-bottom: 20px;
+    margin-left: 25px;
 }
 
 /* Hover effect for items */
@@ -462,7 +467,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 150px;
 }
 
 .img_collection {
@@ -493,7 +498,6 @@ nav ul li a:hover{
 .products-section{
     width: 100%;
     height: auto;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -728,7 +732,6 @@ input {
     background-color: #45a049;
 }
 /* about us page coding ends------------------------------------------------ */
-
 
 
 /* footer designing  */

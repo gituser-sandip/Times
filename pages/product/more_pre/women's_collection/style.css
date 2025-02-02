@@ -21,7 +21,7 @@
     height: 75px;
     display: flex;
     padding: 5px 10px;
-    background: #1751f4;
+    background: #081f5c;
     margin-top: 10px;
     border-radius: 15px;
 }
@@ -232,7 +232,7 @@ nav ul li a:hover{
 footer{
     width: 100%;
     height: auto;
-    background: #1D347A;
+    background: #081f5c;
     padding: 20px;
     color: white;
     font-family: 'Ubuntu', sans-serif;

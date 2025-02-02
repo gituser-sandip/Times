@@ -4,9 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Times</title>
+    <title>Times | Product</title>
     <link rel="stylesheet" href="../../../../../css/style.css">
     <link rel="stylesheet" href="../../men's_collection/css/product.css">
+    <STYLE>
+         #product a{
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+    </STYLE>
 </head>
 
 <body>
@@ -33,6 +43,7 @@
     </header>
 
     <section>
+
     <div class="container">
         <div class="product-section">
             <div class="product-image">
@@ -49,9 +60,13 @@
                 </div>
 
                 <p>A premium watch with excellent craftsmanship and style.</p>
-
-                    <button class="add-to-cart addToCart" id="cart" onclick="buyNow()">Buy Now</button>
-                    <button class="add-to-cart addToCart" id="cart" onclick="addToCart()">Add To Cart</button>
+                    <div class="p-quantity">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <button class="buyNow addToCart" id="cart" onclick="buyNow()">Buy Now</button>
+                    <button class="buyNow addToCart" id="cart" onclick="addToCart()">Add To Cart</button>
             
                 <div class="features">
                     <div class="feature">✓ No-Risk Money Back Guarantee!</div>
@@ -70,7 +85,25 @@
                 </div>
             </div>
         </div>
+        <!-- cart section  -->
+        <div class="cart-main-container">
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div class="cart-container">
+                    <div class="root"></div>
+                    <div class="head"><p>My Cart</p> <span style="color: black; cursor: pointer;" onclick="close_cart()">x</span></div>
+                    <div id="cartItem"><p id="alert-msg">Your item has been added</p></div>
+                    <button class="checkout" onclick="check_out()">Check Out</button>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 99.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart section ends -->
     </div>
+
+    
 
     <!-- Reviews setion  -->
     <h1 style="margin-left: 75px; margin-top: 50px">Reviews</h1>
@@ -97,6 +130,8 @@
             <div class="reviewer">Stephanie Morgan</div>
             <div class="country">United States of America</div>
     </div>
+
+    
     </section>
              <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
              <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
@@ -110,9 +145,9 @@
                 </div>
                 <div class="social_media" style="width: 25%;">
                     <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
-                    <a href="#"><img src="../../../../../../icons/facebook.png" alt="Facebook" width="60px"></a>
-                    <a href="#"><img src="../../../../../../icons/x.png" alt="Twitter" width="60px"></a>
-                    <a href="#"><img src="../../../../../../icons/instagram.png" alt="Instagram" width="60px"></a>
+                    <a href="#"><img src="../../../../../images/icons/facebook.png" alt="Facebook" width="60px"></a>
+                    <a href="#"><img src="../../../../../images/icons/x.png" alt="Twitter" width="60px"></a>
+                    <a href="#"><img src="../../../../../images/icons/instagram.png" alt="Instagram" width="60px"></a>
                 </div>
                 <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
                     <form>
@@ -130,13 +165,70 @@
             </footer>
 
     <script>
-        function addToCart()
-        {
-             alert("Item has been added to the cart"); 
+        // product quantity number increasing and decreasing starts
+        const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        num = document.querySelector(".num");
+
+        let a = 1;
+
+        plus.addEventListener("click", function () {
+            a++;
+            a = (a<10) ? "0" + a : a;
+            num.innerHTML = a;
+        });
+        minus.addEventListener("click", function () {
+            if(a>1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerHTML = a;
+            }
+        });
+        // product quantity number increasing and decreasing ends
+
+
+        // add to cart starts
+
+        function addToCart(){
+            var cart = document.querySelector(".cart-main-container");
+            cart.style.display = "block";
+            var alert = document.querySelector('#alert-msg');
+            alert.innerHTML = "Item added to cart successfully.";
         }
+
+        function close_cart(){
+            var cart = document.querySelector(".cart-main-container");
+            cart.style.display = "none";
+        }
+
+
+
+        // add to cart ends
+
+        // check out product coding
+        function check_out(){
+            var alert = document.querySelector('#alert-msg');
+            alert.innerHTML = "Congratulations ! Purchase successful.";
+            setTimeout(function () {
+                var cart = document.querySelector(".cart-main-container");
+                cart.style.display = "none";
+            },2000);
+        }
+
+        //buy now coding
         function buyNow(){
-            alert("Congratulation! Item has been bought");
+            var cart = document.querySelector(".cart-main-container");
+            var alert = document.querySelector('#alert-msg');
+            cart.style.display = "block";
+            alert.innerHTML = "Congratulations! Purchase successful.";
+            setTimeout(function () {
+                var cart = document.querySelector(".cart-main-container");
+                cart.style.display = "none";
+            },2000);
         }
+        
+        
+        
     </script>
 </body>
 
