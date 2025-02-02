@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timems | Men's product</title>
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <header>
+        <style>
+            .logo {
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        #product a {
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+        .addTo{
+        text-align: center;
+        margin-top: 5px;
+        width: 240px;
+        height: 40px;
+        background: #dc2c30;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        }
+
+        .addTo:hover{
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+        font-size: 15px;
+        background: #e05053;
+        }
+
+        /* procucts sections */
+        .watch-item {
+        min-width: 22%;
+        height: auto;
+        box-sizing: border-box;
+        color: rgb(255, 145, 0);
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(100px);
+        border-radius: 10px;
+        background: #eeecea;
+        font-family: 'Ubuntu Mono', monospace;
+        }
+
+.watch-image {
+    width: 220px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.watch-price {
+    font-size: 20px;
+    color: rgb(255, 145, 0);
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* Hover effect for items */
+.watch-image:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+/* Product page image collection */
+.img_collection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img_collection {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover; 
+    gap: 10px;
+    
+}
+        </style>
+
+        <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
+        <div class="nav_main_container" style="position: fixed;">
+            <div class="nav_container">
+                <div class="logo">
+                    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 35px;">Times</h1>
+                </div>
+                <nav class="nav_section">
+                    <ul style="margin-top: 2px;">
+                        <li id="home"><a href="../../../../index.html">Home</a></li>
+                        <li id="blog"><a href="../../../blog/blog.html">Blog</a></li>
+                        <li id="product"><a href="../../product.html">Products</a></li>
+                        <li id="research"><a href="../../../research/research.html">Research</a></li>
+                        <li id="about"><a href="../../../about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
+    </header>
+
+    <!--Men's watch collection product page -->
+        <section style="display: flex; flex-direction: row;">
+            <!-- categories and brand details coding -->
+            <div class="categories-main-container" style="width: 500px;">
+                <div class="category">
+                    <h2 style="margin-bottom: 25px;">Category</h2>
+                    <ul>
+                        <li><a href="../men's_collection/men.html">Men's Collection</a></li>
+                        <li><a href="../women's_collection/female.html">Women's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="brand">
+                    <h2 style="margin-bottom: 25px;">Brands</h2>
+                    <ul>
+                        <li><a href="rolex.html">Rolex</a></li>
+                        <li><a href="#">Patek Philipe</a></li>
+                        <li><a href="omega.html">Omgea</a></li>
+                        <li><a href="cartier.html">Cartier</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img_collection_container_main">
+                <h3 style="margin-top: 100px; font-family: 'Ubuntu', sans-serif; padding: 10px; font-size: 25px; color: tan;">Patek Philipe Watches</h3>
+                <div class="img_collection_container">
+                    <div class="img_collection">
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/nautilus.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">nautilus</h2>
+                            <p class="watch-price">$9,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/grand-complications.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">grand-compile</h2>
+                            <p class="watch-price">$1,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/aquanaut.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">aquanaut</h2>
+                            <p class="watch-price">$7,688</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/vintage.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">Vintage</h2>
+                            <p class="watch-price">$15,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/gondolo.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">gondolo</h2>
+                            <p class="watch-price">$9,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/calatrava.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">Calatrava</h2>
+                            <p class="watch-price">$1,438</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/golden-ellipse.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">Ellipse</h2>
+                            <p class="watch-price">$7,688</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        <div class="watch-item">
+                            <a href="man's_product_page/1.html"><img src="../../images/patek-philipe/twenty~4.webp" alt="patek-philipe" class="watch-image"></a>
+                            <h2 class="watch-name">Twenty4</h2>
+                            <p class="watch-price">$15,000</p><button class="addTo" id="cart" onclick="addToCart()">Add To
+                                Cart</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <script>
+                function addToCart()
+                {
+                     alert("Item has been added to the cart"); 
+                }
+            </script>
+        </section>
+
+         <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
+    <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
+
+        <div class="times-footer" style="width: 25%;">
+            <h1>Times</h1>
+            <p style="margin-top: 20px;">You have further questions about Times? Then do not hesitate to contact us.</p>
+        </div>
+        <div style="width: 25%;">
+            <p style="margin:  55px 50px ;"> 2025 Times . All rights reserved.</p>
+        </div>
+        <div class="social_media" style="width: 25%;">
+            <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
+            <a href="#"><img src="../../../../icons/facebook.png" alt="Facebook" width="60px"></a>
+            <a href="#"><img src="../../../../icons/x.png" alt="Twitter" width="60px"></a>
+            <a href="#"><img src="../../../../icons/instagram.png" alt="Instagram" width="60px"></a>
+        </div>
+        <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
+            <form>
+                <span>Email</span><br>
+                <input type="email" placeholder="Enter your email"
+                    style="padding: 5px; width: 350px; margin: 10px 0;"><br>
+                <span>Messaage</span><br>
+                <textarea name="message" id="message"
+                    style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
+                <input type="submit" placeholder="submit"
+                    style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
+            </form>
+
+        </div>
+    </footer>
+    <!-- footer ends --------------------------------------------------------------------------------------------------------------------- -->
+    </body>
+</html>
