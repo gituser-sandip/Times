@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times | Product</title>
+    <link rel="stylesheet" href="../../../../../css/style.css">
+    <link rel="stylesheet" href="../../men's_collection/css/product.css">
+    <STYLE>
+         #product a{
+            color: black;
+            background-color: #ffffff;
+            border-radius: 40px 0 40px 0;
+            box-shadow: 0 0 10px #ffffff;
+            transition: 0.6s ease;
+            font-size: 17px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <header>
+
+        <!-- nav bar coding starts----------------------------------------------------------------------------------------------- -->
+        <div class="nav_main_container" style="position: fixed;">
+            <div class="nav_container">
+                <div class="logo">
+                    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 35px;">Times</h1>
+                </div>
+                <nav class="nav_section">
+                    <ul style="margin-top: 2px;">
+                        <li id="home"><a href="../../../../../index.html">Home</a></li>
+                        <li id="blog"><a href="../../../../blog/blog.html">Blog</a></li>
+                        <li id="product"><a href="../../../product.html">Products</a></li>
+                        <li id="research"><a href="../../../../research/research.html">Research</a></li>
+                        <li id="about"><a href="../../../../about/about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- nav bar coding ends ------------------------------------------------------------------------------------------------ -->
+    </header>
+
+    <section>
+
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="../../../../../../images/1.png" alt="Watch">
+            </div>
+
+            <div class="product-info">
+                <h1>Luxury Watch</h1>
+
+                <div class="price">
+                    <span class="old-price">$155.00</span>
+                    <span class="current-price">$99.00</span>
+                    <span>& Free Shipping</span>
+                </div>
+
+                <p>A premium watch with excellent craftsmanship and style.</p>
+                    <div class="p-quantity">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <button class="buyNow addToCart" id="cart" onclick="buyNow()">Buy Now</button>
+                    <button class="buyNow addToCart" id="cart" onclick="addToCart()">Add To Cart</button>
+            
+                <div class="features">
+                    <div class="feature">✓ No-Risk Money Back Guarantee!</div>
+                    <div class="feature">✓ No Hassle Refunds</div>
+                    <div class="feature">✓ Secure Payments</div>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Guaranteed Safe Checkout</h3>
+                    <div class="payment-icons">
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                        <div class="payment-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart section  -->
+        <div class="cart-main-container">
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <div class="cart-container">
+                    <div class="root"></div>
+                    <div class="head"><p>My Cart</p> <span style="color: black; cursor: pointer;" onclick="close_cart()">x</span></div>
+                    <div id="cartItem"><p id="alert-msg">Your item has been added</p></div>
+                    <button class="checkout" onclick="check_out()">Check Out</button>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">$ 99.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cart section ends -->
+    </div>
+
+    
+
+    <!-- Reviews setion  -->
+    <h1 style="margin-left: 75px; margin-top: 50px">Reviews</h1>
+    <div class="reviews">
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Excellent fast communication and secure. Customer is always a priority."</p>
+            <div class="reviewer">Zafer Rasim</div>
+            <div class="country">Saudi Arabia</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"I like the fact that they have an escrow service and that one has several days to think about the decision before being required to complete the deal."</p>
+            <div class="reviewer">Daniel G.</div>
+            <div class="country">Costa Rica</div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★</div>
+            <p class="quote">"My experience was great. The dealer had good communication, the process was seamless, and the watch was shipped timely. It's beautiful and exactly as I expected based on the description."</p>
+            <div class="reviewer">Stephanie Morgan</div>
+            <div class="country">United States of America</div>
+    </div>
+
+    
+    </section>
+             <!-- footer starts -------------------------------------------------------------------------------------------------------------------- -->
+             <footer style="width: 100%; display: flex; justify-content: row; padding-top: 40px;">
+
+                <div class="times-footer" style="width: 25%;">
+                    <h1>Times</h1>
+                    <p style="margin-top: 20px;">You have further questions about Times? Then do not hesitate to contact us.</p>
+                </div>
+                <div style="width: 25%;">
+                    <p style="margin:  55px 50px ;"> 2025 Times . All rights reserved.</p>
+                </div>
+                <div class="social_media" style="width: 25%;">
+                    <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
+                    <a href="#"><img src="../../../../../images/icons/facebook.png" alt="Facebook" width="60px"></a>
+                    <a href="#"><img src="../../../../../images/icons/x.png" alt="Twitter" width="60px"></a>
+                    <a href="#"><img src="../../../../../images/icons/instagram.png" alt="Instagram" width="60px"></a>
+                </div>
+                <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
+                    <form>
+                        <span>Email</span><br>
+                        <input type="email" placeholder="Enter your email"
+                            style="padding: 5px; width: 350px; margin: 10px 0;"><br>
+                        <span>Messaage</span><br>
+                        <textarea name="message" id="message"
+                            style="padding: 5px; width: 350px; height: 60px; margin: 10px 0;"></textarea><br>
+                        <input type="submit" placeholder="submit"
+                            style="width: 350px; height: 40px; font-size: 18px; background: rgb(235, 58, 58); border: none; border-radius: 5px;">
+                    </form>
+        
+                </div>
+            </footer>
+
+    <script>
+        // product quantity number increasing and decreasing starts
+        const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        num = document.querySelector(".num");
+
+        let a = 1;
+
+        plus.addEventListener("click", function () {
+            a++;
+            a = (a<10) ? "0" + a : a;
+            num.innerHTML = a;
+        });
+        minus.addEventListener("click", function () {
+            if(a>1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerHTML = a;
+            }
+        });
+        // product quantity number increasing and decreasing ends
+
+
+        // add to cart starts
+
+        function addToCart(){
+            var cart = document.querySelector(".cart-main-container");
+            cart.style.display = "block";
+            var alert = document.querySelector('#alert-msg');
+            alert.innerHTML = "Item added to cart successfully.";
+        }
+
+        function close_cart(){
+            var cart = document.querySelector(".cart-main-container");
+            cart.style.display = "none";
+        }
+
+
+
+        // add to cart ends
+
+        // check out product coding
+        function check_out(){
+            var alert = document.querySelector('#alert-msg');
+            alert.innerHTML = "Congratulations ! Purchase successful.";
+            setTimeout(function () {
+                var cart = document.querySelector(".cart-main-container");
+                cart.style.display = "none";
+            },2000);
+        }
+
+        //buy now coding
+        function buyNow(){
+            var cart = document.querySelector(".cart-main-container");
+            var alert = document.querySelector('#alert-msg');
+            cart.style.display = "block";
+            alert.innerHTML = "Congratulations! Purchase successful.";
+            setTimeout(function () {
+                var cart = document.querySelector(".cart-main-container");
+                cart.style.display = "none";
+            },2000);
+        }
+        
+        
+        
+    </script>
+</body>
+
+</html>
