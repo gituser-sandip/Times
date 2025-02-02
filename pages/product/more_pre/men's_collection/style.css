@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav section coding starts --------------------------------------------------------------------------------------------------------- */
+
+.nav_main_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: +3;
+    background:inherit;
+}
+
+.nav_container{
+    width: 80%;
+    height: 75px;
+    display: flex;
+    padding: 5px 10px;
+    background: #081F5C;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.logo{
+    width: 15%;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.nav_section{
+    width: 85%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    position: relative;
+    
+}
+
+nav ul li a{
+    text-align: center;
+    padding: 20px 60px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+
+#product a{
+    color: black;
+    background-color: #ffffff;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 0 0 10px #ffffff;
+    transition: 0.6s ease;
+    font-size: 17px;
+  }
+
+
+nav ul li a:hover{
+  color: black;
+  background-color: #ffffff;
+  border-radius: 40px 0 40px 0;
+  box-shadow: 0 0 10px #ffffff;
+  transition: 0.6s ease;
+  font-size: 17px;
+
+}
+
+/* search by cateogery ------------------------------------------------------------------------------------------------------  */
+.categories-main-container{
+    width: 2500px;
+    height: 800px;
+    margin-top: 100px;
+    background: #eeecea;
+    margin-left: 80px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;  
+    padding-left: 45px;
+}
+.s-categories-main-container{
+    width: 51.5%;
+    height: 800px;
+    margin-top: 100px;
+    background: #eeecea;
+    margin-left: 80px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;  
+    padding-left: 45px;
+}
+.categories-main-container ul{
+    padding: 0;
+}
+.categories-main-container li{
+    padding-right: 0;
+}
+.category{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-right: 0;
+}
+.category a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    font-weight: 700;
+}
+.category li,.brand li, .price li{
+    margin: 10px;
+}
+.brand{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+}
+.brand a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.price{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.price p{
+    padding: 5px 0px;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+/* procucts sections */
+.watch-item {
+    min-width: 22%;
+    height: auto;
+    box-sizing: border-box;
+    color: rgb(255, 145, 0);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    background: #eeecea;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.watch-image {
+    width: 220px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.watch-price {
+    font-size: 20px;
+    color: rgb(255, 145, 0);
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+/* Hover effect for items */
+.watch-image:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+/* Product page image collection */
+.img_collection_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.img_collection {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover; 
+    gap: 10px;
+}
+
+/* Creating the Add to cart button */
+.addTo{
+    text-align: center;
+    margin-top: 5px;
+    width: 240px;
+    height: 40px;
+    background: #dc2c30;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.addTo:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    font-size: 15px;
+    background: #e05053;
+}
+
+/* footer designing  */
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #081F5C;
+    padding: 20px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
+}

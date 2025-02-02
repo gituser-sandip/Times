@@ -31,6 +31,31 @@
             text-shadow: 0px 5px 5px black;
             font-weight: 400;
         }
+        /* live clock coding  */
+        .liveClock{
+            position: absolute;
+            top: 480px;
+            right: 340px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #081F5C;
+        }
+        .clock{
+            padding: 40px;
+            border-radius: 10px ;
+        }
+        #date{
+            font-size: 20px;
+            text-align: center;
+        }
+        .clock ul{
+            list-style: none;
+            display: flex;
+            font-size: 50px;
+            gap: 15px;
+        }
+        /* live clock coding ends */
         #home a{
             color: black;
             background-color: #ffffff;
@@ -74,7 +99,47 @@
             </h1>
         </div>
         <!-- Slogan text coding starts------------------------------------------------------------------------------------------- -->
+        
+        <!-- live time preview clock coding starts------------------------------------------------------------------------------------------- -->
+        <div class="liveClock">
+            <div class="clock">
+                <div id="date">Sunday 2 Febuary 2025</div>
+                <ul>
+                    <li id="hours">05</li>
+                    <li class="point">:</li>
+                    <li id="min">20</li>
+                    <li id="point">:</li>
+                    <li id="sec">15</li>
+                </ul>
+            </div>
+        </div>
+        <!-- clock function -->
+        <script>
+           function clock(){
+            var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            
+            var today = new Date();
+            
+            document.getElementById('date').innerHTML = dayName[today.getDay()] + ", " + today.getDate() + " " + monthName[today.getMonth()] + " " + today.getFullYear();
 
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var day = h<11 ? 'AM' : 'PM';
+
+            h = h < 10 ? '0'+h: h;
+            m = m < 10? '0'+m: m;
+            s = s < 10? '0'+s: s;
+
+            document.getElementById('hours').innerHTML = h;
+            document.getElementById('min').innerHTML = m;
+            document.getElementById('sec').innerHTML = s;
+
+           }var inter = setInterval(clock, 400);
+        </script>
+        </script>
+        <!-- live time preview clock coding ends------------------------------------------------------------------------------------------- -->
 
         <!-- section feature image slider coding starts -------------------------------------------------------------------------------- -->
         <div class="main_img" style="padding-top: 15px;">
@@ -137,77 +202,77 @@
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/2.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/cartier/crash.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Cartier</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/3.webp" alt="Rolex" class="watch-image">
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/rolex/oyster-perpetual.webp" alt="Rolex" class="watch-image" width="100%"></a>
                                         <h2 class="watch-name">Rolex</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/4.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/omega/de-ville-prestige.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Omega</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/5.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/patek-philipe/aquanaut.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Patek Philipe</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/6.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/cartier/tank.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Cartier</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/7.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/patek-philipe/twenty~4.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Patek Philipe</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 <div class="watch-item-container">
                                     <div class="watch-item">
-                                        <img src="pages/product/images/8.webp" alt="Rolex" class="watch-image">
-                                        <h2 class="watch-name">Rolex</h2>
+                                        <a href="pages/product/more_pre/men's_collection/man's_product_page/1.html"><img src="pages/product/images/omega/speedmaster-racing.webp" alt="Rolex" class="watch-image" width="100%"></a>
+                                        <h2 class="watch-name">Omega</h2>
                                     </div>
                                     <div class="watch-price-container">
                                         <p class="watch-discount-price"> $9,000</p>
-                                        <p class="watch-price"><s>$10,0000</S></p>
+                                        <p class="p-watch-price"><s>$10,0000</S></p>
                                     </div>
                                 </div>
                                 
@@ -286,7 +351,7 @@
             <div class="whyus-container">
                 <div class="freeShipping" style="margin-left: 50px;">
 
-                    <img src="icons/shipping.png" alt=""> <br>
+                    <img src="images/icons/shipping.png" alt=""> <br>
                     <h3 style="font-family: 'Ubuntu', sans-serif;">Free Shipping</h3> <br>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: #8d8d8d;">Delight in seamless free
                         shipping, <br>
@@ -297,7 +362,7 @@
                 </div>
                 <div class="securePayment">
 
-                    <img src="icons/secure.png" alt="" style="width: 50px;"> <br>
+                    <img src="images/icons/secure.png" alt="" style="width: 50px;"> <br>
                     <h3 style="font-family: 'Ubuntu', sans-serif;">Secure Payment</h3> <br>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: #8d8d8d;">Shop with confidence using our
                         secure <br>
@@ -308,7 +373,7 @@
                 </div>
                 <div class="orderTracking">
 
-                    <img src="icons/tracking.png" alt=""> <br>
+                    <img src="images/icons/tracking.png" alt=""> <br>
                     <h3 style="font-family: 'Ubuntu', sans-serif;">Order Tracking</h3> <br>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: #8d8d8d;">Tracking your order
                         effortlessly with our <br>stramlined system. Stay informed
@@ -318,7 +383,7 @@
                 </div>
                 <div class="easyReturns">
 
-                    <img src="icons/return.png" alt=""> <br>
+                    <img src="images/icons/return.png" alt=""> <br>
                     <h3 style="font-family: 'Ubuntu', sans-serif;">Easy Returns</h3> <br>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: #8d8d8d;">Celebrate worry-free shopping
                         with our <br>
@@ -346,9 +411,9 @@
         </div>
         <div class="social_media" style="width: 25%;">
             <p style="font-family: 'Ubuntu', sans-serif; margin: 5px 10px; margin-bottom: 15px;">Follow us</p>
-            <a href="#"><img src="icons/facebook.png" alt="Facebook" width="60px"></a>
-            <a href="#"><img src="icons/x.png" alt="Twitter" width="60px"></a>
-            <a href="#"><img src="icons/instagram.png" alt="Instagram" width="60px"></a>
+            <a href="#"><img src="images/icons/facebook.png" alt="Facebook" width="60px"></a>
+            <a href="#"><img src="images/icons/x.png" alt="Twitter" width="60px"></a>
+            <a href="#"><img src="images/icons/instagram.png" alt="Instagram" width="60px"></a>
         </div>
         <div class="contact_info" style="width: 25%; font-family: 'Ubuntu', sans-serif;">
             <form>
