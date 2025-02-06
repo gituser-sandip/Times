@@ -710,7 +710,6 @@ h1, h2{
 }
 .developer-containers{
     width: 80%;
-    border: 1px solid #ccc;
     padding-top: 20px;
     
 }
@@ -739,7 +738,7 @@ h1, h2{
 .developer-1-2{
     width: 100%;
     height: auto;
-    background: #ffffff;
+    background: ;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
@@ -750,7 +749,7 @@ h1, h2{
 .developer-3-4-5{
     width: 48%;
     height: auto;
-    background: #ffffff;
+    background:;
     border-radius: 15px;
     margin-bottom: 20px;
     display: flex;
