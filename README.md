@@ -11,7 +11,7 @@
 
 ## 📸 Preview
 
-![Project Screenshot](assets/preview.png)
+![Project Screenshot]([assets/preview.png](https://github.com/gituser-sandip/Times/blob/main/assets/preview.png))
 
 ---
 
