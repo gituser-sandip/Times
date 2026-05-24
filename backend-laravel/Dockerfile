@@ -31,7 +31,7 @@ COPY . /var/www
 RUN composer install --no-dev --optimize-autoloader
 
 # Set proper permissions for Laravel's cache and storage folders
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache\
     && chmod -R 775 /var/www/storage \
     && chmod -R 775 /var/www/bootstrap/cache
 
