@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Environment variables
+.env
+.env.example
+.env.backup
+
+# Composer dependencies (Docker will install its own)
+/vendor
+
+# Node dependencies and built assets (if applicable)
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Laravel specific
+/storage/*.key
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# OS generated files
+.DS_Store
+Thumbs.db
