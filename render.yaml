@@ -14,25 +14,3 @@ services:
         source: /*
         destination: /index.html
 
-  # ─── Backend: Laravel API (Docker) ──────────────────────────────────────────
-  - type: web
-    name: times-api
-    runtime: docker
-    dockerfilePath: ./backend-laravel/Dockerfile
-    dockerContext: ./backend-laravel
-    plan: free
-    envVars:
-      - key: APP_ENV
-        value: production
-      - key: APP_DEBUG
-        value: false
-      - key: APP_URL
-        value: https://times-oetk.onrender.com
-      - key: FRONTEND_URL
-        value: https://times-watch.onrender.com
-      - key: SANCTUM_STATEFUL_DOMAINS
-        value: times-watch.onrender.com
-      - key: DB_CONNECTION
-        value: pgsql
-      - key: APP_KEY
-        generateValue: true
