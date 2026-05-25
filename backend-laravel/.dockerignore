@@ -2,9 +2,8 @@
 .git
 .gitignore
 
-# Environment variables
+# Environment variables (keep .env.example for Docker builds)
 .env
-.env.example
 .env.backup
 
 # Composer dependencies (Docker will install its own)

@@ -43,7 +43,7 @@ COPY start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
 # Expose port 80 to the web
-EXPOSE 80
+EXPOSE 10000
 
 # Run the startup script when the container launches
 CMD ["/usr/local/bin/start.sh"]
