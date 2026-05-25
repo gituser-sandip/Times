@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const asset = (path) => new URL(path, import.meta.url).href;
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://times-oetk.onrender.com/api';
 
 async function apiRequest(path, options = {}) {
   let response;
